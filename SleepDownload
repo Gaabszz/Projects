@@ -1,0 +1,18 @@
+# Step 1: Import as Libraries
+
+import os
+import tkinter as tk
+from tkinter import messagebox
+import time
+import pyautogui
+
+# Step 2: Ask The User and EXPLAIN How Long They Want To Turn Off the Computer.
+
+tempo = float(input('What is the time allocated in hours to turn off your computer? (EXAMPLE: 2.5 = 2 AND A HALF HOURS) : '))
+tempo = tempo * 3600
+time.sleep(tempo)
+
+# Step 3: Show a Warning on the User's screen that their Computer will be turned off in 7 Minutes.
+
+messagebox.showwarning('Desligando', 'Seu Computador Está Sendo Desligado')
+os.system("shutdown /s /c <Your Computer Is Shutting Down in 7 Minutes.>/t 420")
