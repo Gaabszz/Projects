@@ -14,5 +14,5 @@ time.sleep(tempo)
 
 # Step 3: Show a Warning on the User's screen that their Computer will be turned off in 7 Minutes.
 
-messagebox.showwarning('Desligando', 'Seu Computador Está Sendo Desligado')
+messagebox.showwarning('Shutting Down', 'Your computer is shutting down')
 os.system("shutdown /s /c <Your Computer Is Shutting Down in 7 Minutes.>/t 420")
